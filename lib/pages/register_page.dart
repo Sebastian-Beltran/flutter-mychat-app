@@ -17,9 +17,15 @@ class RegisterPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Logo(titulo: 'Register',),
+                  Logo(
+                    titulo: 'Register',
+                  ),
                   _Form(),
-                  Labels(ruta: 'login', texto1: '¿Ya tienes una cuenta?', texto2: 'Ingresa ahora!',),
+                  Labels(
+                    ruta: 'login',
+                    texto1: '¿Ya tienes una cuenta?',
+                    texto2: 'Ingresa ahora!',
+                  ),
                   Text(
                     'Términos y condiciones de uso',
                     style: TextStyle(fontWeight: FontWeight.w300),
@@ -69,11 +75,10 @@ class __FormState extends State<_Form> {
           ),
           BotonAzul(
             text: 'Registrate',
-            onPressed: (){
+            onPressed: () {
               print('email ${emailCtrl.text}');
               print('password ${passCtrl.text}');
             },
-
           )
         ],
       ),

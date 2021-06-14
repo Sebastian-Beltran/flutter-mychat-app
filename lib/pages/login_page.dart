@@ -17,9 +17,15 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Logo(titulo: 'MyChat!',),
+                  Logo(
+                    titulo: 'MyChat!',
+                  ),
                   _Form(),
-                  Labels(ruta: 'register', texto1: '¿No tienes cuenta?', texto2: 'Crear una ahora!',),
+                  Labels(
+                    ruta: 'register',
+                    texto1: '¿No tienes cuenta?',
+                    texto2: 'Crear una ahora!',
+                  ),
                   Text(
                     'Términos y condiciones de uso',
                     style: TextStyle(fontWeight: FontWeight.w300),
@@ -62,11 +68,10 @@ class __FormState extends State<_Form> {
           ),
           BotonAzul(
             text: 'Ingrese',
-            onPressed: (){
+            onPressed: () {
               print('email ${emailCtrl.text}');
               print('password ${passCtrl.text}');
             },
-
           )
         ],
       ),
